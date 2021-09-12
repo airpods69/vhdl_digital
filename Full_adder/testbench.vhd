@@ -5,7 +5,7 @@ entity full_adder_tb is
 end entity;
 
 architecture tb of full_adder_tb is
-    component full_adder is
+    component full_adder_act1 is
         port(
         a,b,c : in std_logic;
         sum ,carry : out std_logic
@@ -15,7 +15,7 @@ architecture tb of full_adder_tb is
     signal a, b, c, sum, carry: std_logic;
 
 begin 
-    uut : full_adder port map(
+    uut : full_adder_act1 port map(
     a => a , b => b , c => c , sum => sum , carry => carry
     );
 
